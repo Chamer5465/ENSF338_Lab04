@@ -1,11 +1,11 @@
 
 def processdata(li):
-    for i in range(len(li)):    # o(n) coomplexity
+    for i in range(len(li)):    # o(n) complexity
         if li[i] > 5:
             for j in range(len(li)):    # o(n) complexity
                 li[i] *= 2
                 
-# 1. At the best case scenario (which is when no elements in the list)
+# 1. At the best case scenario (which is when no elements in the list
 # are > 5) this will be an o(n) complexity as it still has to traverse
 # the list once and its worst and average case complexity is when 1 or more
 # elements are above 5 it has a complexity of o(n*n)
