@@ -80,14 +80,14 @@ def measure_linked_list_search_time(n, iterations):
     head = Node(0)
     for value in range(1, n):
         head = head.add(value)
-    total_time = timeit.timeit(lambda: run_linked_list_search(head, n), iterations)
+    total_time = timeit.timeit(lambda: run_linked_list_search(head, n), number=iterations)
     avg_time = total_time / iterations
     return avg_time
 
 def measure_array_search_time(n, iterations):
     elements = list(range(n))
     arr = Array(elements)
-    total_time = timeit.timeit(lambda: run_array_search(arr, n), iterations)
+    total_time = timeit.timeit(lambda: run_array_search(arr, n), number=iterations)
     avg_time = total_time / iterations
     return avg_time
 
